@@ -21,6 +21,8 @@ h3
   overflow-wrap: break-word;
 }
 
+
+
 body {
   color: #656464;
   font-family: 'Inter', sans-serif;
@@ -112,7 +114,7 @@ p.section__subtitle {
 .card__avatars img {
   border: solid 1px #FFFFFF;
   border-radius: 50%;
-  width: 2rem;
+  width: 1.5rem;
   box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28);
 }
 
@@ -120,6 +122,26 @@ a.link__arrowed {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.achievement__content .link__arrowed {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 192px; height: 58px;
+    background: #217BF4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 20px #217BF442;
+    border-radius: 14px;
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.link__arrowed svg {
+    margin-left: 8px;
 }
 
 .prime {
@@ -172,13 +194,7 @@ a.link__arrowed {
 .hero {
   display: flex;
   align-items: center;
-  gap: 69px;    
   padding: 5rem 0;
-}
-
-.hero__content{
-  width: 515px;
-  height: 366px;
 }
 
 .hero__title {
@@ -196,7 +212,6 @@ a.link__arrowed {
   font-size: 3.5rem;
   line-height: 1.1;
   margin: 1.5rem 0;
-  width: 515px;
 }
 
 .hero__description {
@@ -208,7 +223,6 @@ a.link__arrowed {
 .hero__cta {
   display: flex;
   gap: 1rem;
-  width: 586px;
 }
 
 .whats-netbooks {
@@ -233,6 +247,7 @@ a.link__arrowed {
   padding-left: 2rem;
 }
 
+/* TODO: Find a better way to apply border color */
 .whats-netbooks__content li::before {
   content: '';
   position: absolute;
